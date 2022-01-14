@@ -1,6 +1,5 @@
-# Ignore all
-/*
-
-# But not these files
-!*.cpp
+*
+!/*
 !*.h
+!*.cpp
+!*.java
