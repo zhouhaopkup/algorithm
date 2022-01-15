@@ -31,7 +31,8 @@ void insertionSort(T arr[], int n) { //插入排序的改进(减少交换操作�
 
 int main() {
     int n = 100000;
-    int *arr = SortTestHelper::generateRandomArray(n, 0, n);
+    // int *arr = SortTestHelper::generateRandomArray(n, 0, n);
+    int *arr = SortTestHelper::generateNearlyOrderedArray(n, 0);// 在数据近乎有序的情况下，O(n^2)插入排序的时间复杂度近乎于O(n)
     int *arr2 = SortTestHelper::copyIntArray(arr, n);
 
     SortTestHelper::testSort("Insertion Sort", insertionSort, arr, n);
